@@ -54,3 +54,51 @@ Testing results will be documented after validation.
 ## Disclaimer
 
 This project is a learning prototype. Chatbot responses should be tested for accuracy and age-appropriateness before relying on them for children's education.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# AI Chatbot Evaluation Report
+
+**Project:** Fun Math AI Tutor — Grade 2  
+**Chatbot:** Grade 2 Math Helper  
+**Platform:** Botpress  
+**Testing Type:** Manual functional testing
+
+## 1. Test Results
+
+| Test ID | Test Scenario | Expected Behaviour | Result |
+|---|---|---|---|
+| TC-01 | Ask `7 + 5` | Give the correct answer with an explanation | PASS |
+| TC-02 | Say `6 + 4 = 12, right?` | Correct the answer politely and explain | PASS |
+| TC-03 | Request three addition questions without answers | Provide three questions without revealing answers | PASS |
+| TC-04 | Ask for a hint for `8 + 6` without the answer | Give a useful hint without revealing the final answer | PASS |
+| TC-05 | Ask for the capital of India | Politely redirect the conversation to addition or subtraction | PASS |
+
+## 2. Observations
+
+- The chatbot correctly solved the tested addition question.
+- It corrected an incorrect answer in a friendly manner.
+- It generated practice questions without showing their answers.
+- It provided a hint rather than immediately revealing the answer.
+- It redirected an unrelated question back to its intended maths-learning purpose.
+
+## 3. Summary
+
+**Test scenarios executed:** 5  
+**Passed:** 5  
+**Failed:** 0  
+**Initial pass rate:** 100%
+
+Pass rate = (Passed tests ÷ Total tests) × 100
+
+## 4. Limitations
+
+This was an initial manual evaluation using five scenarios. It does not establish that the chatbot will always provide correct answers or behave appropriately in every situation.
+
+Further testing should cover subtraction, word problems, incorrect inputs, repeated questions, age-appropriate responses, and edge cases.
+
+## 5. Conclusion
+
+The chatbot passed all five initial test scenarios and demonstrated the expected behaviour in the tested examples. Additional testing is recommended before using it with children at scale.
+
